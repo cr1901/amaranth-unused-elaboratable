@@ -6,7 +6,7 @@ groups = ["default", "test"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:199399cdf8f0757e9c12abbd076e377dfc1e4e0c7eb2ed009a6a3cc6f3b5b28b"
+content_hash = "sha256:ca7fd5f3cf9d77984d57843d25556bc086589b118eb529d82c990e7dd9d835ff"
 
 [[package]]
 name = "amaranth"
@@ -53,44 +53,8 @@ git = "https://github.com/amaranth-lang/amaranth"
 revision = "4e078322a04042b5f840006c200f123c3c42273b"
 summary = "Amaranth hardware definition language"
 dependencies = [
-    "amaranth @ git+https://github.com/amaranth-lang/amaranth",
+    "amaranth @ git+https://github.com/amaranth-lang/amaranth@4e078322a04042b5f840006c200f123c3c42273b",
     "amaranth-yosys>=0.10",
-]
-
-[[package]]
-name = "appdirs"
-version = "1.4.4"
-summary = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-files = [
-    {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
-    {file = "appdirs-1.4.4.tar.gz", hash = "sha256:7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41"},
-]
-
-[[package]]
-name = "apycula"
-version = "0.9.0a1"
-requires_python = ">=3.6"
-summary = "Open Source tools for Gowin FPGAs"
-dependencies = [
-    "crcmod",
-    "numpy",
-]
-files = [
-    {file = "Apycula-0.9.0a1-py3-none-any.whl", hash = "sha256:d83fbacb97975d7a005ef1aac32bb9e88811caaa79fbde2241fb5059fea11c68"},
-    {file = "Apycula-0.9.0a1.tar.gz", hash = "sha256:4bb3baf0f6788737cb2ebff68b7e4425a73c9020ff62a6af720c9b46df135a48"},
-]
-
-[[package]]
-name = "click"
-version = "8.1.7"
-requires_python = ">=3.7"
-summary = "Composable command line interface toolkit"
-dependencies = [
-    "colorama; platform_system == \"Windows\"",
-]
-files = [
-    {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
-    {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
 ]
 
 [[package]]
@@ -101,14 +65,6 @@ summary = "Cross-platform colored terminal text."
 files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
-]
-
-[[package]]
-name = "crcmod"
-version = "1.7"
-summary = "CRC Generator"
-files = [
-    {file = "crcmod-1.7.tar.gz", hash = "sha256:dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e"},
 ]
 
 [[package]]
@@ -207,42 +163,6 @@ files = [
 ]
 
 [[package]]
-name = "numpy"
-version = "1.24.4"
-requires_python = ">=3.8"
-summary = "Fundamental package for array computing in Python"
-files = [
-    {file = "numpy-1.24.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:c0bfb52d2169d58c1cdb8cc1f16989101639b34c7d3ce60ed70b19c63eba0b64"},
-    {file = "numpy-1.24.4-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:ed094d4f0c177b1b8e7aa9cba7d6ceed51c0e569a5318ac0ca9a090680a6a1b1"},
-    {file = "numpy-1.24.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:79fc682a374c4a8ed08b331bef9c5f582585d1048fa6d80bc6c35bc384eee9b4"},
-    {file = "numpy-1.24.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7ffe43c74893dbf38c2b0a1f5428760a1a9c98285553c89e12d70a96a7f3a4d6"},
-    {file = "numpy-1.24.4-cp310-cp310-win32.whl", hash = "sha256:4c21decb6ea94057331e111a5bed9a79d335658c27ce2adb580fb4d54f2ad9bc"},
-    {file = "numpy-1.24.4-cp310-cp310-win_amd64.whl", hash = "sha256:b4bea75e47d9586d31e892a7401f76e909712a0fd510f58f5337bea9572c571e"},
-    {file = "numpy-1.24.4-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:f136bab9c2cfd8da131132c2cf6cc27331dd6fae65f95f69dcd4ae3c3639c810"},
-    {file = "numpy-1.24.4-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:e2926dac25b313635e4d6cf4dc4e51c8c0ebfed60b801c799ffc4c32bf3d1254"},
-    {file = "numpy-1.24.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:222e40d0e2548690405b0b3c7b21d1169117391c2e82c378467ef9ab4c8f0da7"},
-    {file = "numpy-1.24.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7215847ce88a85ce39baf9e89070cb860c98fdddacbaa6c0da3ffb31b3350bd5"},
-    {file = "numpy-1.24.4-cp311-cp311-win32.whl", hash = "sha256:4979217d7de511a8d57f4b4b5b2b965f707768440c17cb70fbf254c4b225238d"},
-    {file = "numpy-1.24.4-cp311-cp311-win_amd64.whl", hash = "sha256:b7b1fc9864d7d39e28f41d089bfd6353cb5f27ecd9905348c24187a768c79694"},
-    {file = "numpy-1.24.4-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:1452241c290f3e2a312c137a9999cdbf63f78864d63c79039bda65ee86943f61"},
-    {file = "numpy-1.24.4-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:04640dab83f7c6c85abf9cd729c5b65f1ebd0ccf9de90b270cd61935eef0197f"},
-    {file = "numpy-1.24.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a5425b114831d1e77e4b5d812b69d11d962e104095a5b9c3b641a218abcc050e"},
-    {file = "numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dd80e219fd4c71fc3699fc1dadac5dcf4fd882bfc6f7ec53d30fa197b8ee22dc"},
-    {file = "numpy-1.24.4-cp38-cp38-win32.whl", hash = "sha256:4602244f345453db537be5314d3983dbf5834a9701b7723ec28923e2889e0bb2"},
-    {file = "numpy-1.24.4-cp38-cp38-win_amd64.whl", hash = "sha256:692f2e0f55794943c5bfff12b3f56f99af76f902fc47487bdfe97856de51a706"},
-    {file = "numpy-1.24.4-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:2541312fbf09977f3b3ad449c4e5f4bb55d0dbf79226d7724211acc905049400"},
-    {file = "numpy-1.24.4-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:9667575fb6d13c95f1b36aca12c5ee3356bf001b714fc354eb5465ce1609e62f"},
-    {file = "numpy-1.24.4-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f3a86ed21e4f87050382c7bc96571755193c4c1392490744ac73d660e8f564a9"},
-    {file = "numpy-1.24.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d11efb4dbecbdf22508d55e48d9c8384db795e1b7b51ea735289ff96613ff74d"},
-    {file = "numpy-1.24.4-cp39-cp39-win32.whl", hash = "sha256:6620c0acd41dbcb368610bb2f4d83145674040025e5536954782467100aa8835"},
-    {file = "numpy-1.24.4-cp39-cp39-win_amd64.whl", hash = "sha256:befe2bf740fd8373cf56149a5c23a0f601e82869598d41f8e188a0e9869926f8"},
-    {file = "numpy-1.24.4-pp38-pypy38_pp73-macosx_10_9_x86_64.whl", hash = "sha256:31f13e25b4e304632a4619d0e0777662c2ffea99fcae2029556b17d8ff958aef"},
-    {file = "numpy-1.24.4-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:95f7ac6540e95bc440ad77f56e520da5bf877f87dca58bd095288dce8940532a"},
-    {file = "numpy-1.24.4-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:e98f220aa76ca2a977fe435f5b04d7b3470c0a2e6312907b37ba6068f26787f2"},
-    {file = "numpy-1.24.4.tar.gz", hash = "sha256:80f5e3a4e498641401868df4208b74581206afbee7cf7b8329daae82676d9463"},
-]
-
-[[package]]
 name = "packaging"
 version = "23.1"
 requires_python = ">=3.7"
@@ -312,67 +232,6 @@ files = [
     {file = "wasmtime-12.0.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:fa5372d8f3e2bfcaaf7cfffb0d5efc640351889d7aed6d34711f32a85fe9b5ff"},
     {file = "wasmtime-12.0.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:c72d1f9b253b97aff19375d6980e3e6380929424fe07b56364413bf54fd80049"},
     {file = "wasmtime-12.0.0-py3-none-win_amd64.whl", hash = "sha256:7eee12e6bb72123b3beec757d6b48f90b09a1097b1c6dadff7013ffbc46df2fe"},
-]
-
-[[package]]
-name = "yowasp-nextpnr-ecp5"
-version = "0.6.0.0.post445"
-summary = "nextpnr-ecp5 FPGA place and route tool"
-dependencies = [
-    "yowasp-runtime~=1.1",
-]
-files = [
-    {file = "yowasp_nextpnr_ecp5-0.6.0.0.post445-py3-none-any.whl", hash = "sha256:8e16358f8c0e17b5edf3964c4e01d41b85df57742c8f01dbd9588726f6f361f1"},
-]
-
-[[package]]
-name = "yowasp-nextpnr-gowin"
-version = "0.6.0.0.post445"
-summary = "nextpnr-gowin FPGA place and route tool"
-dependencies = [
-    "Apycula==0.9.0a1",
-    "yowasp-runtime~=1.1",
-]
-files = [
-    {file = "yowasp_nextpnr_gowin-0.6.0.0.post445-py3-none-any.whl", hash = "sha256:ca9b685974033413f4fc7c0d8112137c7354bd4088d073c2d24b50ef94f5b66e"},
-]
-
-[[package]]
-name = "yowasp-nextpnr-ice40"
-version = "0.6.0.0.post445"
-summary = "nextpnr-ice40 FPGA place and route tool"
-dependencies = [
-    "yowasp-runtime~=1.1",
-]
-files = [
-    {file = "yowasp_nextpnr_ice40-0.6.0.0.post445-py3-none-any.whl", hash = "sha256:0ff37a2d113fb1176202620c727eb59c48eaf774b8871524e4975d4f774e4ed1"},
-]
-
-[[package]]
-name = "yowasp-runtime"
-version = "1.36"
-requires_python = "~=3.7"
-summary = "Common runtime for YoWASP packages"
-dependencies = [
-    "appdirs~=1.4",
-    "importlib-resources; python_version < \"3.9\"",
-    "wasmtime<13,>=1.0",
-]
-files = [
-    {file = "yowasp_runtime-1.36-py3-none-any.whl", hash = "sha256:f8d44fdfd6218456948149a650aa1b5a05d3c47da67f01f3cb4fdb685693a401"},
-]
-
-[[package]]
-name = "yowasp-yosys"
-version = "0.32.0.43.post561"
-summary = "Yosys Open SYnthesis Suite"
-dependencies = [
-    "click",
-    "importlib-resources; python_version < \"3.9\"",
-    "yowasp-runtime~=1.12",
-]
-files = [
-    {file = "yowasp_yosys-0.32.0.43.post561-py3-none-any.whl", hash = "sha256:2d2d8200b1ead7b6b6be46ea4ee1da61a820dcf31f810907f5ada5d9199b18ac"},
 ]
 
 [[package]]

@@ -7,10 +7,6 @@ requires-python = "~=3.8"
 dependencies = [
     "amaranth[builtin-yosys] @ git+https://github.com/amaranth-lang/amaranth",
     "amaranth-boards @ git+https://github.com/amaranth-lang/amaranth-boards",
-    "yowasp-yosys",
-    "yowasp-nextpnr-ice40",
-    "yowasp-nextpnr-ecp5",
-    "yowasp-nextpnr-gowin",
 ]
 
 [tool.pdm.dev-dependencies]
@@ -18,9 +14,15 @@ test = [
     "pytest"
 ]
 
+[tool.pytest.ini_options]
+pythonpath = [
+  "src/",
+]
+markers = [
+  "clks: tuple of clocks to register for simulator.",
+  "module: top-level module to simulate.",
+]
+
 [tool.pdm.scripts]
 _.env_file = ".env.toolchain"
 test = { cmd = "pytest" }
-build_ice40 = { call = "amaranth_template_fpga:build_ice40()" }
-build_ecp5  = { call = "amaranth_template_fpga:build_ecp5()"  }
-build_gowin = { call = "amaranth_template_fpga:build_gowin()" }
